@@ -9,8 +9,8 @@ async function spinImage(totalStep) {
   button.classList.add("disabled");
   const img = document.querySelector(".img-rand");
   img.classList.add("spinning");
-  const minDelay = 100;
-  const maxDelay = 900;
+  const minDelay = 1;
+  const maxDelay = 500;
 
   for (let i = 0; i < totalStep; i++) {
     randomVinyet();
