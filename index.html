@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spin</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  </head>
+  <body>
+    <div class="flash" able="true"></div>
+    <div class="vinyet">
+      <div class="container">
+        <h1 class="title-spin">Randomizer</h1>
+        <img
+          class="img-rand"
+          src="https://picsum.photos/300/300?random=1"
+          width="300px"
+          height="300px"
+        />
+        <div class="blur-bg"></div>
+        <button onclick="spinImage(30)" class="rand-button">New Image</button>
+      </div>
+    </div>
+    <div class="bgm-ask">
+      <h1 class="h1-bgm-ask">Apakah kamu ingin mengaktifkan musik latar?</h1>
+      <button id="start" onclick="startBGM(); closeAsk()" class="acc-bgm-ask">
+        Iya
+      </button>
+      <button class="dec-bgm-ask" onclick="closeAsk()">Tidak</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="bgmHandler.js"></script>
+    <script src="decoration.js"></script>
+  </body>
+</html>
