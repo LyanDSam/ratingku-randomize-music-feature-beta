@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Oswald:wght@200..700&display=swap');
 body {
   margin: 0;
   padding: 0;
@@ -331,4 +330,16 @@ body {
 .dec-bgm-ask:hover{
     background-color: #ffffff55;
     transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s;
+}
+
+.title{
+  position: absolute;
+  font-size: clamp(30px, 5vw, 60px);
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  pointer-events: none;
+  font-family: "Oswald", sans-serif;
+  left: 30px;
+  color: #1b0973;
 }
